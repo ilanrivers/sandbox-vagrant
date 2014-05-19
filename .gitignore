@@ -1,0 +1,4 @@
+.vagrant
+Vagrantfile.custom
+cache
+tmp
