@@ -1,0 +1,12 @@
+###############################################################################################
+# Custom Environment Configuration                                                            #
+###############################################################################################
+
+# Hostname
+@HOSTNAME = "VagrantHost"
+
+# Network Type
+@NETWORK_TYPE = "public_network"
+
+# IP Address
+@IP_ADDRESS = "192.168.1.5"

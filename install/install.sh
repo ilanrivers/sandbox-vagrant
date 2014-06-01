@@ -40,6 +40,7 @@ sh ${VAGRANT_INSTALL_ROOT}/scripts/couchbase.sh
 sh ${VAGRANT_INSTALL_ROOT}/scripts/couchbase_php.sh
 
 # Update all packages
+echo -e "\nUpdating all packages..."
 yum -y -q update
 
 # Restart Apache
