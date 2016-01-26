@@ -2,9 +2,6 @@
 # Virtual Environment Configuration                                                           #
 ###############################################################################################
 
-# The URL of the vagrant box
-BOX_URL = "https://vagrantcloud.com/chef/centos-6.5/version/1/provider/virtualbox.box"
-
 # Hostname
 @HOSTNAME = "VagrantHost"
 
@@ -25,8 +22,8 @@ BOX_URL = "https://vagrantcloud.com/chef/centos-6.5/version/1/provider/virtualbo
 
 Vagrant.configure("2") do |config|
 
-    config.vm.box = "chef/centos-6.5"
-    config.vm.box_url = BOX_URL
+	# Boxes can be found at: https://atlas.hashicorp.com/bento/
+    config.vm.box = "bento/centos-6.7"
 
     config.vm.provider :virtualbox do |vb|
         vb.customize ["modifyvm", :id, "--memory", "#{@MEMORY}"]
