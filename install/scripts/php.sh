@@ -1,14 +1,16 @@
 # Install PHP
 echo -e "\nInstalling PHP..."
 yum -y -q install \
- php55w \
- php55w-gd \
- php55w-intl \
- php55w-mbstring \
- php55w-mcrypt \
- php55w-pdo \
- php55w-pecl-xdebug \
- php55w-process \
- php55w-xml \
- php55w-soap \
- php55w-devel
+ php70w \
+ php70w-gd \
+ php70w-intl \
+ php70w-mbstring \
+ php70w \
+ php70w-process \
+ php70w-xml \
+ php70w-soap \
+ php70w-devel \
+ php70w-opcache \
+ php70w-pdo \
+ php70w-phpdbg \
+ php70w-mcrypt
