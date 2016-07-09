@@ -18,8 +18,11 @@ if [ ! -d "$VAGRANT_CACHE" ]; then
     mkdir "$VAGRANT_CACHE"
 fi
 
-# Install Webtatic Repo
-sh ${VAGRANT_INSTALL_ROOT}/scripts/webtatic.sh
+# Install Extra Repos
+sh ${VAGRANT_INSTALL_ROOT}/scripts/repos.sh
+
+# Install Git
+sh ${VAGRANT_INSTALL_ROOT}/scripts/git.sh
 
 # Install MySQL
 sh ${VAGRANT_INSTALL_ROOT}/scripts/mysql.sh
@@ -34,10 +37,10 @@ sh ${VAGRANT_INSTALL_ROOT}/scripts/apache.sh
 sh ${VAGRANT_INSTALL_ROOT}/scripts/samba.sh
 
 # Install Couchbase
-sh ${VAGRANT_INSTALL_ROOT}/scripts/couchbase.sh
+# sh ${VAGRANT_INSTALL_ROOT}/scripts/couchbase.sh
 
 # Install Couchbase PHP extension
-sh ${VAGRANT_INSTALL_ROOT}/scripts/couchbase_php.sh
+# sh ${VAGRANT_INSTALL_ROOT}/scripts/couchbase_php.sh
 
 # Update all packages
 echo -e "\nUpdating all packages..."
