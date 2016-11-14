@@ -23,7 +23,7 @@
 Vagrant.configure("2") do |config|
 
 	# Boxes can be found at: https://atlas.hashicorp.com/bento/
-    config.vm.box = "bento/centos-6.7"
+    config.vm.box = "bento/centos-7.2"
 
     config.vm.provider :virtualbox do |vb|
         vb.customize ["modifyvm", :id, "--memory", "#{@MEMORY}"]

@@ -13,4 +13,5 @@ yum -y -q install \
  php70w-opcache \
  php70w-pdo \
  php70w-phpdbg \
- php70w-mcrypt
+ php70w-mcrypt \
+ php70w-pecl-apcu

@@ -8,4 +8,4 @@ if [ ! -d "/etc/samba" ]; then
 fi
 
 # Restart SAMBA
-service smb restart
+systemctl start smb.service

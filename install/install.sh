@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo -e "\n\n******* Starting to install Development Box Modules ( Might take a few minutes ) *******"
 
 export VAGRANT_ROOT=/vagrant
@@ -22,16 +23,16 @@ fi
 sh ${VAGRANT_INSTALL_ROOT}/scripts/repos.sh
 
 # Install Git
-sh ${VAGRANT_INSTALL_ROOT}/scripts/git.sh
+#sh ${VAGRANT_INSTALL_ROOT}/scripts/git.sh
 
 # Install MySQL
-sh ${VAGRANT_INSTALL_ROOT}/scripts/mysql.sh
-
-# Install PHP
-sh ${VAGRANT_INSTALL_ROOT}/scripts/php.sh
+#sh ${VAGRANT_INSTALL_ROOT}/scripts/mysql.sh
 
 # Install Apache (http)
-sh ${VAGRANT_INSTALL_ROOT}/scripts/apache.sh
+#sh ${VAGRANT_INSTALL_ROOT}/scripts/apache.sh
+
+# Install PHP
+#sh ${VAGRANT_INSTALL_ROOT}/scripts/php.sh
 
 # Install SAMBA
 sh ${VAGRANT_INSTALL_ROOT}/scripts/samba.sh
@@ -44,7 +45,7 @@ sh ${VAGRANT_INSTALL_ROOT}/scripts/samba.sh
 
 # Update all packages
 echo -e "\nUpdating all packages..."
-yum -y -q update
+#yum -y -q update
 
 # Restart Apache
-service httpd restart
+systemctl start httpd.service
