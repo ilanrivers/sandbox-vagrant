@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Install MySQL
 echo -e "\nInstalling MySQL..."
-yum -y -q install mysql.`uname -i` yum-plugin-replace
-yum -y -q replace mysql --replace-with mysql55w
-yum -y -q install mysql55w mysql55w-server
-chkconfig mysqld on
+yum install mariadb-server
 
 # Restart MySQL
-systemctl start mysqld.service
+# systemctl start mysqld.service
+
+
+

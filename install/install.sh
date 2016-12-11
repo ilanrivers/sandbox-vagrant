@@ -23,16 +23,16 @@ fi
 sh ${VAGRANT_INSTALL_ROOT}/scripts/repos.sh
 
 # Install Git
-#sh ${VAGRANT_INSTALL_ROOT}/scripts/git.sh
+sh ${VAGRANT_INSTALL_ROOT}/scripts/git.sh
 
 # Install MySQL
-#sh ${VAGRANT_INSTALL_ROOT}/scripts/mysql.sh
+sh ${VAGRANT_INSTALL_ROOT}/scripts/mysql.sh
 
 # Install Apache (http)
-#sh ${VAGRANT_INSTALL_ROOT}/scripts/apache.sh
+sh ${VAGRANT_INSTALL_ROOT}/scripts/apache.sh
 
 # Install PHP
-#sh ${VAGRANT_INSTALL_ROOT}/scripts/php.sh
+sh ${VAGRANT_INSTALL_ROOT}/scripts/php.sh
 
 # Install SAMBA
 sh ${VAGRANT_INSTALL_ROOT}/scripts/samba.sh

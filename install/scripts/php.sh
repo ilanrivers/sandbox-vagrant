@@ -11,6 +11,7 @@ yum -y -q install \
  php70w-soap \
  php70w-devel \
  php70w-opcache \
+  php70w-mysql \
  php70w-pdo \
  php70w-phpdbg \
  php70w-mcrypt \
